@@ -1,10 +1,23 @@
 .home {
-  height: 25em;
+  max-height: 5em;
+  padding: 1em;
 
   .club250logo {
-    @include span-columns(6);
-    @include shift(3);
-    padding: 1em;
+    position: relative;
+    z-index: 999;
+
+    @include media($large-screen) {
+      margin: -7em;
+      @include span-columns(6);
+      @include shift(3);
+    }
+  }
+
+  .leftdiamonds {
+    background-image: url(image_path('leftdiamonds.png') no-repeat); 
+  }
+  .rightdiamonds {
+    background-image: url(image_path('rightdiamonds.png') no-repeat);
   }
 }
 
