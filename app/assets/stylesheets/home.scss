@@ -1,0 +1,10 @@
+.home {
+  height: 25em;
+
+  .club250logo {
+    @include span-columns(6);
+    @include shift(3);
+    padding: 1em;
+  }
+}
+
