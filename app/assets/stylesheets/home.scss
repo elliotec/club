@@ -1,13 +1,28 @@
-.home {
-  max-height: 5em;
-  padding: 1em;
+section.home {
+  padding: .1em;
+  z-index: -100;
+  position: fixed;
+  top: 3em;
+
+  @include media($large-screen) {
+    top: .1em;
+  }
+
+  @include media($medium-screen) {
+    top: 2em;
+  }
 
   .club250logo {
     position: relative;
     z-index: 999;
 
+    @include media($medium-screen) {
+      @include span-columns(6);
+      @include shift(3);
+    }
+
     @include media($large-screen) {
-      margin: -7em;
+      margin: -6em;
       @include span-columns(6);
       @include shift(3);
     }
@@ -17,6 +32,11 @@
     background-image: url(image_path('leftdiamonds.png') no-repeat); 
   }
   .rightdiamonds {
+    @include media($large-screen) {
+      position: relative;
+      bottom: 1em;
+    }
+
     background-image: url(image_path('rightdiamonds.png') no-repeat);
   }
 }

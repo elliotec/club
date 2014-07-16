@@ -12,8 +12,10 @@ header.navigation {
   $navigation-active-link-color: transparentize($dark-gray, 0.5);
   $horizontal-bar-mode: $large-screen;
 
+  position: fixed;
+  top: 0;
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  border-bottom: 1px solid $light-gray;
   height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -94,7 +96,7 @@ header.navigation {
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
-    padding-right: 5em;
+    padding-right: 3em;
     text-align: right;
     width: 100%;
     z-index: 9999;
@@ -123,7 +125,7 @@ header.navigation {
   }
 
   .active-nav-item a {
-    border-bottom: 1px solid $navigation-active-link-color;
+    color: $navigation-active-link-color;
     padding-bottom: 3px;
   }
 }
