@@ -1,12 +1,12 @@
 section.howitworks {
-  margin-top: 27em;
   position: relative;
+  margin-top: 27em;
   background-color: #F2F2F2;
   border-top: 1px solid $light-gray;
   border-bottom: 1px solid $light-gray;
 
   @include media($smallish-screen) {
-    margin-top: 43em;
+    margin-top: 35em;
   }
 
   @include media($medium-screen) {
@@ -15,5 +15,71 @@ section.howitworks {
 
   @include media($large-screen) {
     margin-top: 50em;
+  } 
+
+  @include hidpi(2) {
+    margin-top: 27em;
+
+    @include media($smallish-screen) {
+      margin-top: 38em;
+    }
+
+    @include media($large-screen) {
+      margin-top: 48em;
+    }
+
+  }
+
+  .arrow-wrap {
+    position:absolute;
+    z-index:1;
+    left:50%;
+    top:-5em;
+    margin-left:-5em;
+    background:$orange;
+    width:10em;
+    height:10em;
+    padding:4em 2em;
+    border-radius:50%;
+    font-size:0.5em;
+    display:block;
+  }
+
+  .arrow {
+    float:left;
+    position:relative;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: #fff transparent transparent transparent;
+    @include transform(rotate(360deg));
+  }
+
+  .arrow:after {
+    content:'';
+    position:absolute;
+    top:-3.2em;
+    left:-3em;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 3em 3em 0 3em;
+    border-color: $orange transparent transparent transparent;
+    @include transform(rotate(360deg));
+  }
+
+  @include keyframes(arrows) {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
   }
 }

@@ -86,6 +86,6 @@ cite {
   }
 }
 
-@include font-face('Futura', '/fonts/FuturaStd-Book');
-@include font-face('Galliard', '/fonts/GalliardStd-Roman');
-@include font-face('Caecilia', '/fonts/CaeciliaLTStd-Roman');
+@include font-face('Futura', 'FuturaStd-Book', normal, $asset-pipeline: true);
+@include font-face('Galliard', 'GalliardStd-Roman', normal, $asset-pipeline: true);
+@include font-face('Caecilia', 'CaeciliaLTStd-Roman', normal, $asset-pipeline: true);
