@@ -1,17 +1,19 @@
 section.howitworks {
-  width: 100%;
-  z-index: 99;
-  margin-top: 30em;
+  margin-top: 27em;
   position: relative;
-  height: 50em;
   background-color: #F2F2F2;
   border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+
+  @include media($smallish-screen) {
+    margin-top: 43em;
+  }
 
   @include media($medium-screen) {
     margin-top: 40em;
   }
 
   @include media($large-screen) {
-    margin-top: 45em;
+    margin-top: 50em;
   }
 }

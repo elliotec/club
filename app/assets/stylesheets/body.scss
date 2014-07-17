@@ -1,6 +1,12 @@
 body {
-  section{
+  section {
+    z-index: 99;
+    height: 55em;
+    padding-top: 3.5em;
+
     h1 {
+      font-weight: 400;
+      font-family: 'Futura';
       text-align: center;
       color: $blue;
 

@@ -12,6 +12,7 @@ header.navigation {
   $navigation-active-link-color: transparentize($dark-gray, 0.5);
   $horizontal-bar-mode: $large-screen;
 
+  font-family: 'Futura';
   position: fixed;
   top: 0;
   background-color: $navigation-background;

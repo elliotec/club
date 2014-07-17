@@ -85,3 +85,7 @@ cite {
     content: '\2014 \00A0';
   }
 }
+
+@include font-face('Futura', '/fonts/FuturaStd-Book');
+@include font-face('Galliard', '/fonts/GalliardStd-Roman');
+@include font-face('Caecilia', '/fonts/CaeciliaLTStd-Roman');
