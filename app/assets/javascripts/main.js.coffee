@@ -85,9 +85,20 @@ $(document).ready ->
           , 400, ->
             location.hash = target
             return
-
           return
-
     return
-
   return
+
+header = document.querySelector("header")
+headroom = new Headroom(header,
+  tolerance: 20
+  offset: 200
+  classes:
+    initial: "animated"
+    pinned: "swingInX"
+    unpinned: "swingOutX"
+    top: "headroom--top"
+    notTop: "headroom--not-top"
+)
+headroom.init()
+return

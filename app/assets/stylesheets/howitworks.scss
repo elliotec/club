@@ -1,40 +1,18 @@
 section.howitworks {
   position: relative;
-  margin-top: 27em;
+  margin-top: -3em;
   background-color: #F2F2F2;
   border-top: 1px solid $light-gray;
   border-bottom: 1px solid $light-gray;
+  padding: 3em;
 
-  @include media($smallish-screen) {
-    margin-top: 35em;
-  }
-
-  @include media($medium-screen) {
-    margin-top: 40em;
-  }
-
-  @include media($large-screen) {
-    margin-top: 50em;
-  } 
-
-  @include hidpi(2) {
-    margin-top: 27em;
-
-    @include media($smallish-screen) {
-      margin-top: 38em;
-    }
-
-    @include media($large-screen) {
-      margin-top: 48em;
-    }
-
-  }
+// Fancy Arrow
 
   .arrow-wrap {
     position:absolute;
-    z-index:1;
+    z-index:9999;
     left:50%;
-    top:-5em;
+    top: -5em;
     margin-left:-5em;
     background:$orange;
     width:10em;
@@ -81,5 +59,54 @@ section.howitworks {
     80% { top:-12%; }
     90% { top:12%; }
     100% { top:0; }
+  }
+
+  // CONTENT 
+
+  .bullets {
+  $icon-bullet-size: 3.5em;
+  margin-bottom: $base-line-height;
+
+  
+    .three-col-bullet {
+      @include media($large-screen) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+    }
+
+    .bullet-icon {
+      float: left;
+      background: $base-accent-color;
+      padding: $icon-bullet-size /4;
+      border-radius: 50%;
+      width: $icon-bullet-size;
+      height: $icon-bullet-size;
+    }
+
+    .bullet-icon-1 {
+      background: $blue;
+    }
+
+    .bullet-icon-2 {
+      background: darken($blue, +10);
+    }
+
+    .bullet-icon-3 {
+      background: darken($blue, +20);
+    }
+
+    .bullet-content {
+      margin-left: $icon-bullet-size *1.4;
+      margin-bottom: 2em;
+    }
+
+    h2 {
+      font-size: $icon-bullet-size /2.5;
+      padding-top: $icon-bullet-size /7;
+      margin-bottom: $icon-bullet-size /6;
+      border-bottom: 1px solid transparentize($base-font-color, .8);
+      display: inline-block;
+    }
   }
 }
