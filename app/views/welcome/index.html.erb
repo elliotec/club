@@ -40,7 +40,7 @@
         <h3>1</h3>
       </div>
       <div class="bullet-content">
-        <h2>This Bullet Title</h2>
+        <h2>Purchase 250 LP + per month to become a Club 250 member</h2>
         <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
         </div>
     </div>  
@@ -49,7 +49,7 @@
         <h3>2</h3>
       </div>
       <div class="bullet-content">
-        <h2>Another Bullet Title</h2>
+        <h2>Qualify at the Leader, Diamond, or Presidential Diamond level</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
       </div>
     </div>
@@ -58,7 +58,7 @@
         <h3>3</h3>
       </div>
       <div class="bullet-content">
-        <h2>Last Bullet Title</h2>
+        <h2>Check <a href="#winners">below</a> each month to see if you're a winner!</h2>
         <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
       </div>
     </div> 
@@ -80,4 +80,21 @@
   <h1>Frequently Asked Questions</h1>
 
 </section>
+
+<script>// grab an element
+var header = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(header, {
+  "tolerance": 5,
+  "offset": 205,
+  "classes": {
+    "initial": "animated",
+    "pinned": "swingInX",
+    "unpinned": "swingOutX",
+    "top": "headroom--top",
+    "notTop": "headroom--not-top"
+  }
+});
+// initialise
+headroom.init(); </script>
 

@@ -1,3 +1,5 @@
+#= require headroom
+
 ######## HEADER #########
 
 $(document).ready ->
