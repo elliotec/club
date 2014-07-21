@@ -1,4 +1,3 @@
-#= require headroom
 
 ######## HEADER #########
 
@@ -23,6 +22,22 @@ $(document).ready ->
     return
   return
 
+####### HEADROOM #######
+
+$ ->
+  header = document.querySelector("header")
+  headroom = new Headroom(header,
+    tolerance: 5
+    offset: 200
+    classes:
+      initial: "animated"
+      pinned: "swingInX"
+      unpinned: "swingOutX"
+      top: "headroom--top"
+      notTop: "headroom--not-top"
+  )
+  headroom.init()
+  return
 
 ####### SCROLL ARROW ########
 
@@ -90,17 +105,3 @@ $(document).ready ->
           return
     return
   return
-
-header = document.querySelector("header")
-headroom = new Headroom(header,
-  tolerance: 5
-  offset: 200
-  classes:
-    initial: "animated"
-    pinned: "swingInX"
-    unpinned: "swingOutX"
-    top: "headroom--top"
-    notTop: "headroom--not-top"
-)
-headroom.init()
-return
