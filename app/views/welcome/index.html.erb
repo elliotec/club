@@ -1,13 +1,13 @@
 <div class="table">
   <header class="navigation">
     <div class="navigation-wrapper">
-      <a href="javascript:void(0)" class="logo">
+      <a href="#top" class="logo">
         <%= image_tag "4LifeLogo.png" %>
       </a>
       <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
       <div class="nav">
         <ul id="navigation-menu">
-          <li class="nav-link"><a href="http://localhost:3000">Home</a></li>
+          <li class="nav-link"><a href="http://www.4life.com">4life.com</a></li>
           <li class="nav-link"><a href="#howitworks">How It Works</a></li>
           <li class="nav-link"><a href="#packs">Packs</a></li>
           <li class="nav-link"><a href="#winners">Winners</a></li>
@@ -16,11 +16,11 @@
       </div>
     </div>
   </header>
-
+  <a id="#top"></a>
   <div class="home" id="home">
-    <%= image_tag "leftdiamonds.png" %>
+    <%= image_tag "topdiamonds.png", class: 'topdiamonds' %>
     <%= image_tag "club250logo.png", class: 'club250logo' %>
-    <%= image_tag "rightdiamonds.png" %>
+    <%= image_tag "bottomdiamonds.png" %>
   </div>
 </div>
 
@@ -32,7 +32,6 @@
   <h1>How It Works</h1>
 
   <div class="bullets">
-
     <div class="bullet three-col-bullet">
       <div class="bullet-icon bullet-icon-1">
         <h3>1</h3>
@@ -61,6 +60,52 @@
       </div>
     </div> 
   </div>
+
+  <table>
+    <tr>
+      <th>If you purchase:</th>
+      <th>100 LP</th>
+      <th>250 LP</th>
+      <th>Club 250 Packs<span class="best">Best Value!</span></th>
+    </tr>
+    <tr>
+      <td>Club 250 Member</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Product Discount</td>
+      <td>$0</td>
+      <td>$0</td>
+      <td>Up to $81</td>
+    </tr>
+    <tr>
+      <td>Total Profit Potential</td>
+      <td>$11</td>
+      <td>$65</td>
+      <td>Up to $156</td>
+    </tr>
+    <tr>
+      <td>Next Day Rapid Rewards Payment</td>
+      <td>$0</td>
+      <td>$37.50</td>
+      <td>$37.50</td>
+    </tr>
+    <tr>
+      <td>Accelerated Organizational Volume</td>
+      <td>8500 LP<br>3 Levels</td>
+      <td>21,250 LP<br>3 Levels</td>
+      <td>21,250 LP<br>3 Levels</td>
+    </tr>
+    <tr>
+      <td>Cash Prizes</td>
+      <td>$0</td>
+      <td>Up to $5000</td>
+      <td>Up to $5000</td>
+    </tr>
+    <table>
+  </table>
 </section>
 
 

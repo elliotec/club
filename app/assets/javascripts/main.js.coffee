@@ -27,7 +27,7 @@ $(document).ready ->
 $ ->
   header = document.querySelector("header")
   headroom = new Headroom(header,
-    tolerance: 5
+    tolerance: 2
     offset: 200
     classes:
       initial: "animated"

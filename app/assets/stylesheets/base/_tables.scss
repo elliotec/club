@@ -1,22 +1,43 @@
 table {
+
+  border: 2px solid $blue;
   border-collapse: collapse;
   margin: ($base-line-height / 2) 0;
   table-layout: fixed;
   width: 100%;
+  font-size: ($base-font-size / 1.75);
+
+  @include media($medium-screen) {
+    font-size: ($base-font-size);
+  }
 }
 
 th {
-  border-bottom: 1px solid darken($base-border-color, 15%);
+  border-bottom: 1px solid $blue;
   font-weight: bold;
+  font-size: $base-font-size *1.1;
   padding: ($base-line-height / 2) 0;
-  text-align: left;
+  text-align: center;
 }
 
 td {
-  border-bottom: 1px solid $base-border-color;
+  border: 1px solid $blue;
   padding: ($base-line-height / 2) 0;
+
+  &:nth-of-type(1) {
+    background-color: $light-blue;
+  }
+
+  &:nth-of-type(2) {
+    background-color: darken($light-blue, +20);
+  }
+
+  &:nth-of-type(4) {
+    background-color: $orange;
+  }
 }
 
 tr, td, th {
   vertical-align: middle;
+  padding: 1em;
 }

@@ -1,36 +1,8 @@
 div.home {
-  padding: .1em;
   z-index: -100;
   position: fixed;
-  top: 3em;
   width: 100%;
-  height: 100em;
-
-  @include media($smallish-screen) {
-    top: 2em;
-  }
-
-  @include media($medium-screen) {
-    top: 1.5em;
-  }
-
-  @include media($large-screen) {
-    top: -1.5em;
-  }
-
-  @include hidpi(2) {
-    @include media($smallish-screen) {
-      top: 3em;
-    }
-
-    @include media($medium-screen) {
-      top: 1.5em;
-    }
-
-    @include media($large-screen) {
-      top: -1.5em;
-    }
-  }
+  height: 100%;
 
   .club250logo {
     position: relative;
@@ -41,38 +13,36 @@ div.home {
       @include shift(2);
     }
 
-    @include media($medium-screen) {
-      padding: 2em;
-      margin: -2.5em;
+    @include media($large-screen) {
+      margin: -15em;
       @include span-columns(6);
       @include shift(3);
     }
 
-    @include media($large-screen) {
-      margin: -6em;
+    @include media($extralarge-screen) {
       @include span-columns(4);
       @include shift(4);
     }
 
     @include hidpi(2) {
       @include media($large-screen) {
-
-        margin: -8em;
+        margin: -10em;
         @include span-columns(6);
         @include shift(3);
       }
     }
   }
 
-  .leftdiamonds {
-  }
-  // .rightdiamonds {
-  //   @include media($large-screen) {
-  //     position: relative;
-  //     bottom: 1em;
-  //   }
+  .topdiamonds {
+    @include media($large-screen) {
+      margin-top: -5em;
+    }
 
-  //   background-image: url(image_path('rightdiamonds.png') no-repeat);
-  // }
+    @include hidpi(2) {
+      @include media($large-screen) {
+        margin-top: -12em;
+      }
+    }
+  }
 }
 
