@@ -1,0 +1,154 @@
+article.type-system-traditional {
+  $sans-serif: 'Futura', sans-serif;
+  $caecilia: 'Caecilia', serif;
+  $serif: 'Galliard', serif;
+
+  @include span-columns(8);
+  @include shift(2);
+
+  @include clearfix;
+  text-align: left;
+
+  padding: 1em;
+
+  a {
+    color: #01A7E3;
+  }
+
+  .type {
+    border-bottom: 2px solid;
+    display: inline-block;
+    font-family: $sans-serif;
+    font-size: .7em;
+    font-weight: 800;
+    margin-bottom: 2em;
+    padding: .1em 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: $blue;
+    font-family: $serif;
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: .3em;
+
+    @include media($medium-screen) {
+      font-size: 2.6em;
+    }
+  }
+
+  h2 {
+    color: $orange;
+    font-family: $serif;
+    font-size: 1.7em;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin-bottom: .9em;
+
+    @include media($medium-screen) {
+      font-size: 1.7em;
+    }
+  }
+
+  h3 {
+    color: $blue;
+    font-family: $serif;
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: .4em;
+  }
+
+  p.date {
+    color: transparentize($base-font-color, .5);
+    font-family: $serif;
+    margin-bottom: 1em;
+
+    font-style: italic;
+  }
+
+  p {
+    font-family: $sans-serif;
+    letter-spacing: 1;
+    margin-bottom: 1.5em;
+    line-height: 1.55em;
+
+    span {
+      font-family: $caecilia;
+      font-size: 1.2em;
+      //font-style: italic;
+    }
+  }
+
+  hr {
+    width: 17em;
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+
+  p.author {
+    font-family: $caecilia;
+    font-size: 1.2em;
+    //font-style: italic;
+  }
+
+  .comparison {
+    @include outer-container;
+
+    h5 {
+      @include span-columns(6);
+      @include omega();
+      text-align: center;
+      color: $blue;
+      font-family: 'Galliard';
+      font-weight: 400;
+    }
+
+    p {
+      @include span-columns(6);
+      @include omega();
+      padding: .4em;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    margin-bottom: 1em;
+  }
+
+  h6 {
+    color: #27ae60;
+    font-family: 'Caecilia';
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1.25em;
+    font-style: italic;
+  }
+
+  .galliard {
+    font-family: 'Galliard';
+  }
+
+  .futura {
+    font-family: 'Futura';
+  }
+
+  .caecilia {
+    font-family: 'Caecilia';
+  }
+
+  .roboto {
+    font-family: sans-serif;
+  }
+
+  .slab {
+    font-family: courier;
+  }
+
+  .garamond {
+    font-family: serif;
+  }
+}

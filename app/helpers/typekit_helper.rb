@@ -1,0 +1,2 @@
+module TypekitHelper
+end
