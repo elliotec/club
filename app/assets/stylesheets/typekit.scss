@@ -40,14 +40,12 @@ article.type-system-traditional {
   }
 
   h2 {
-    text-align: center;
     color: $orange;
     font-family: $serif;
     font-size: 1.7em;
     font-weight: 700;
     line-height: 1.25em;
     margin-bottom: .9em;
-    padding: 1em;
 
     @include media($medium-screen) {
       font-size: 1.7em;
@@ -85,40 +83,34 @@ article.type-system-traditional {
     }
   }
 
-  // hr {
-  //   width: 17em;
-  //   margin-top: -1em;
-  //   margin-bottom: 2em;
-  // }
-
   p.author {
     font-family: $caecilia;
     font-size: 1.2em;
-    //font-style: italic;
+    font-style: italic;
   }
 
-  .comparison {
-    @include outer-container;
+  // .comparison {
+  //   @include outer-container;
 
-    h5 {
-      @include span-columns(6);
-      @include omega();
-      text-align: center;
-      color: $blue;
-      font-family: 'Galliard';
-      font-weight: 400;
-    }
+  //   h5 {
+  //     @include span-columns(6);
+  //     @include omega();
+  //     text-align: center;
+  //     color: $blue;
+  //     font-family: 'Galliard';
+  //     font-weight: 400;
+  //   }
 
-    p {
-      @include span-columns(6);
-      @include omega();
-      padding: .4em;
-      font-size: 1.5em;
-      text-align: center;
-    }
+  //   p {
+  //     @include span-columns(6);
+  //     @include omega();
+  //     padding: .4em;
+  //     font-size: 1.5em;
+  //     text-align: center;
+  //   }
 
-    margin-bottom: 1em;
-  }
+  //   margin-bottom: 1em;
+  // }
 
   h6 {
     color: #27ae60;
@@ -130,27 +122,27 @@ article.type-system-traditional {
     font-style: italic;
   }
 
-  .galliard {
-    font-family: 'Galliard';
-  }
+  // .galliard {
+  //   font-family: 'Galliard';
+  // }
 
-  .futura {
-    font-family: 'Futura';
-  }
+  // .futura {
+  //   font-family: 'Futura';
+  // }
 
-  .caecilia {
-    font-family: 'Caecilia';
-  }
+  // .caecilia {
+  //   font-family: 'Caecilia';
+  // }
 
-  .roboto {
-    font-family: sans-serif;
-  }
+  // .roboto {
+  //   font-family: sans-serif;
+  // }
 
-  .slab {
-    font-family: courier;
-  }
+  // .slab {
+  //   font-family: courier;
+  // }
 
-  .garamond {
-    font-family: serif;
-  }
+  // .garamond {
+  //   font-family: serif;
+  // }
 }
